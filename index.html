@@ -2,19 +2,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynasty Ink SMP</title>
-    <style>
-        body { background-color: #000; color: #fff; font-family: sans-serif; text-align: center; padding: 50px; }
-        img { width: 200px; margin-top: 20px; }
-        a { color: #0ff; text-decoration: none; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dynasty Ink SMP</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
-    <h1>Harlem’s #1 Hairline Restoration Service</h1>
-    <p>Contact us at 347-674-5001 or visit <a href="https://www.dynastyinksmp.com">www.dynastyinksmp.com</a></p>
-    <p>Email: dynastyink9@gmail.com</p>
-    <p>Book now through Calendly!</p>
+<body class="dark-theme">
+  <header class="site-header">
+    <nav>
+      <img src="logo.png" alt="Dynasty Ink SMP Logo" class="logo" />
+    </nav>
+    <h1>Harlem's #1 Hairline Restoration Service</h1>
+  </header>
+
+  <section class="booking">
+    <h2>Book an Appointment</h2>
+    <iframe src="https://calendly.com/dynastyink9" loading="lazy"></iframe>
+  </section>
+
+  <section class="instagram">
+    <h2>Instagram Showcase</h2>
+    <p>Follow us @dynastyinksmp for real transformations</p>
+    <iframe src="https://www.instagram.com/dynastyinksmp/embed" loading="lazy"></iframe>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/mayvlkpg" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Email Address" required />
+      <input type="tel" name="phone" placeholder="Phone Number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
+      <textarea name="message" placeholder="What kind of hair restoration do you need?" required></textarea>
+      <label>
+        <input type="checkbox" name="sms_opt_in" /> I agree to receive SMS follow-ups
+      </label>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer class="site-footer">
+    <p>Website: <a href="https://www.dynastyinksmp.com">www.dynastyinksmp.com</a> | Phone: <a href="tel:3476745001">347-674-5001</a></p>
+    <p>&copy; 2025 Dynasty Ink SMP. All rights reserved.</p>
+  </footer>
 </body>
 </html>
