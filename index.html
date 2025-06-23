@@ -9,16 +9,19 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: url('Dynasty_Ink_SMP_Harlem.jpg') center center / contain no-repeat fixed;
-      background-color: #000;
+      background: url('Dynasty_Ink_SMP_Harlem.jpg') center center / cover no-repeat fixed;
       color: #fff;
     }
     .overlay {
       background: rgba(0, 0, 0, 0.75);
       width: 100%;
+      height: 100vh;
       padding: 60px 20px 0;
       box-sizing: border-box;
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
     header.site-header img.logo {
       height: 85px;
@@ -38,46 +41,19 @@
       font-weight: 500;
       text-shadow: 1px 1px 2px #000;
     }
-    section {
-      padding: 60px 20px;
-      max-width: 960px;
-      margin: 0 auto;
-      background-color: rgba(0, 0, 0, 0.8);
-      border-radius: 12px;
-      margin-bottom: 30px;
-    }
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-      color: #ffc107;
-    }
-    iframe {
-      width: 100%;
-      height: 420px;
-      border: none;
-      border-radius: 12px;
-    }
-    form {
-      display: grid;
-      gap: 15px;
-    }
-    input, textarea, button {
-      padding: 12px;
-      border: none;
-      border-radius: 8px;
-      font-size: 1rem;
-    }
-    input, textarea {
-      background-color: #222;
-      color: #fff;
-    }
-    button {
+    .cta-buttons a {
+      display: inline-block;
+      margin: 15px 10px;
+      padding: 14px 28px;
       background-color: #ffc107;
       color: #000;
-      cursor: pointer;
+      text-decoration: none;
       font-weight: bold;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      box-shadow: 1px 1px 5px #000;
     }
-    button:hover {
+    .cta-buttons a:hover {
       background-color: #ffca2c;
     }
     footer.site-footer {
@@ -103,32 +79,11 @@
       <h1 class="hero-title">DYNASTY INK SMP</h1>
       <h2 class="hero-subtitle">HARLEM’S #1 HAIRLINE RESTORATION SERVICE</h2>
     </header>
+    <div class="cta-buttons">
+      <a href="https://calendly.com/dynastyink9" target="_blank">Book Consultation</a>
+      <a href="tel:3476745001">Call Now</a>
+    </div>
   </div>
-
-  <section class="booking">
-    <h2>Book an Appointment</h2>
-    <iframe src="https://calendly.com/dynastyink9" loading="lazy"></iframe>
-  </section>
-
-  <section class="instagram">
-    <h2>Instagram Showcase</h2>
-    <p>Follow us <strong>@dynastyinksmp</strong> for real transformations</p>
-    <iframe src="https://www.instagram.com/dynastyinksmp/embed" loading="lazy"></iframe>
-  </section>
-
-  <section class="contact">
-    <h2>Contact Us</h2>
-    <form action="https://formspree.io/f/mayvlkpg" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Email Address" required />
-      <input type="tel" name="phone" placeholder="Phone Number (e.g. 123-456-7890)" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
-      <textarea name="message" placeholder="What kind of hair restoration do you need?" required></textarea>
-      <label>
-        <input type="checkbox" name="sms_opt_in" /> I agree to receive SMS follow-ups
-      </label>
-      <button type="submit">Submit</button>
-    </form>
-  </section>
 
   <footer class="site-footer">
     <p>Website: <a href="https://www.dynastyinksmp.com">www.dynastyinksmp.com</a> | Phone: <a href="tel:3476745001">347-674-5001</a></p>
