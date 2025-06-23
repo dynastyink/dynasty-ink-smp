@@ -3,135 +3,126 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dynasty Ink SMP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dynasty Ink SMP - Harlem's #1 Hairline Restoration</title>
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
       background: url('harlem-bg.jpg') center center / cover no-repeat fixed;
       color: #fff;
+      line-height: 1.6;
     }
+
     .overlay {
-      background: rgba(0, 0, 0, 0.75);
-      width: 100%;
-      padding: 60px 20px 0;
-      box-sizing: border-box;
+      background: rgba(0, 0, 0, 0.7);
+      min-height: 100vh;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       text-align: center;
     }
-    header.site-header img.logo {
-      height: 85px;
+
+    .logo {
+      max-width: 180px;
       margin-bottom: 20px;
     }
-    h1.hero-title {
+
+    h1 {
       font-size: 3rem;
-      margin: 0;
       color: #ffc107;
-      font-weight: 800;
-      text-shadow: 1px 1px 3px #000;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 4px #000;
     }
-    h2.hero-subtitle {
-      font-size: 1.6rem;
-      margin: 10px 0 40px;
-      color: #fff;
-      font-weight: 500;
-      text-shadow: 1px 1px 2px #000;
-    }
-    section {
-      padding: 60px 20px;
-      max-width: 960px;
-      margin: 0 auto;
-      background-color: rgba(0, 0, 0, 0.8);
-      border-radius: 12px;
-      margin-bottom: 30px;
-    }
+
     h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-      color: #ffc107;
+      font-size: 1.5rem;
+      color: #fff;
+      margin-bottom: 40px;
     }
+
     iframe {
       width: 100%;
-      height: 420px;
+      max-width: 600px;
+      height: 400px;
       border: none;
-      border-radius: 12px;
+      margin-bottom: 40px;
+      border-radius: 10px;
     }
+
     form {
-      display: grid;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 10px;
+      max-width: 600px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
       gap: 15px;
     }
+
     input, textarea, button {
       padding: 12px;
-      border: none;
-      border-radius: 8px;
       font-size: 1rem;
+      border: none;
+      border-radius: 6px;
     }
+
     input, textarea {
-      background-color: #222;
+      background-color: #333;
       color: #fff;
     }
+
     button {
       background-color: #ffc107;
       color: #000;
       cursor: pointer;
       font-weight: bold;
     }
-    button:hover {
-      background-color: #ffca2c;
-    }
-    footer.site-footer {
-      background: rgba(0, 0, 0, 0.85);
-      padding: 20px;
+
+    footer {
       text-align: center;
+      margin-top: 60px;
       font-size: 0.9rem;
-      border-top: 1px solid #333;
+      color: #ccc;
     }
-    footer a {
+
+    a {
       color: #ffc107;
       text-decoration: none;
     }
-    footer a:hover {
+
+    a:hover {
       text-decoration: underline;
     }
   </style>
 </head>
 <body>
   <div class="overlay">
-    <header class="site-header">
-      <img src="logo.png" alt="Dynasty Ink SMP Logo" class="logo" />
-      <h1 class="hero-title">DYNASTY INK SMP</h1>
-      <h2 class="hero-subtitle">HARLEM’S #1 HAIRLINE RESTORATION SERVICE</h2>
-    </header>
-  </div>
+    <img src="logo.png" alt="Dynasty Ink Logo" class="logo"/>
+    <h1>DYNASTY INK SMP</h1>
+    <h2>Harlem’s #1 Hairline Restoration Service</h2>
 
-  <section class="booking">
-    <h2>Book an Appointment</h2>
     <iframe src="https://calendly.com/dynastyink9" loading="lazy"></iframe>
-  </section>
 
-  <section class="instagram">
-    <h2>Instagram Showcase</h2>
-    <p>Follow us <strong>@dynastyinksmp</strong> for real transformations</p>
-    <iframe src="https://www.instagram.com/dynastyinksmp/embed" loading="lazy"></iframe>
-  </section>
-
-  <section class="contact">
-    <h2>Contact Us</h2>
     <form action="https://formspree.io/f/mayvlkpg" method="POST">
       <input type="text" name="name" placeholder="Your Name" required />
       <input type="email" name="email" placeholder="Email Address" required />
-      <input type="tel" name="phone" placeholder="Phone Number (e.g. 123-456-7890)" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
-      <textarea name="message" placeholder="What kind of hair restoration do you need?" required></textarea>
-      <label>
-        <input type="checkbox" name="sms_opt_in" /> I agree to receive SMS follow-ups
-      </label>
+      <input type="tel" name="phone" placeholder="Phone Number" />
+      <textarea name="message" placeholder="Describe what you’re looking for..." required></textarea>
+      <label><input type="checkbox" name="sms_opt_in" /> I agree to receive SMS follow-ups</label>
       <button type="submit">Submit</button>
     </form>
-  </section>
 
-  <footer class="site-footer">
-    <p>Website: <a href="https://www.dynastyinksmp.com">www.dynastyinksmp.com</a> | Phone: <a href="tel:3476745001">347-674-5001</a></p>
-    <p>&copy; 2025 Dynasty Ink SMP. All rights reserved.</p>
-  </footer>
+    <footer>
+      <p>© 2025 Dynasty Ink SMP — <a href="https://www.dynastyinksmp.com">www.dynastyinksmp.com</a> | Phone: <a href="tel:3476745001">347-674-5001</a></p>
+    </footer>
+  </div>
 </body>
 </html>
