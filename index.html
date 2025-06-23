@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,19 +8,15 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: url('Dynasty_Ink_SMP_Harlem.jpg') center center / cover no-repeat fixed;
+      background: url('background.jpg') center center / cover no-repeat fixed;
       color: #fff;
     }
     .overlay {
       background: rgba(0, 0, 0, 0.75);
       width: 100%;
-      height: 100vh;
       padding: 60px 20px 0;
       box-sizing: border-box;
       text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
     }
     header.site-header img.logo {
       height: 85px;
@@ -41,17 +36,20 @@
       font-weight: 500;
       text-shadow: 1px 1px 2px #000;
     }
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 40px;
+    }
     .cta-buttons a {
-      display: inline-block;
-      margin: 15px 10px;
-      padding: 14px 28px;
       background-color: #ffc107;
       color: #000;
-      text-decoration: none;
+      padding: 12px 24px;
       font-weight: bold;
+      text-decoration: none;
       border-radius: 8px;
-      font-size: 1.1rem;
-      box-shadow: 1px 1px 5px #000;
+      transition: background-color 0.3s ease;
     }
     .cta-buttons a:hover {
       background-color: #ffca2c;
@@ -78,11 +76,11 @@
       <img src="logo.png" alt="Dynasty Ink SMP Logo" class="logo" />
       <h1 class="hero-title">DYNASTY INK SMP</h1>
       <h2 class="hero-subtitle">HARLEM’S #1 HAIRLINE RESTORATION SERVICE</h2>
+      <div class="cta-buttons">
+        <a href="https://calendly.com/dynastyink9" target="_blank">Book Consultation</a>
+        <a href="tel:3476745001">Call Now</a>
+      </div>
     </header>
-    <div class="cta-buttons">
-      <a href="https://calendly.com/dynastyink9" target="_blank">Book Consultation</a>
-      <a href="tel:3476745001">Call Now</a>
-    </div>
   </div>
 
   <footer class="site-footer">
