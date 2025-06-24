@@ -23,7 +23,7 @@
       align-items: center;
       min-height: 100vh;
       text-align: center;
-      padding-bottom: 100px; /* Moved buttons up */
+      padding-bottom: 200px; /* Moved buttons even higher */
     }
     .logo {
       max-width: 80%;
@@ -37,25 +37,27 @@
     }
     .button {
       margin: 10px;
-      padding: 14px 28px;
-      font-size: 1rem;
+      padding: 16px 32px;
+      font-size: 1.1rem;
       font-weight: bold;
       color: #000;
-      background-color: #ffc107;
-      border: none;
-      border-radius: 8px;
+      background-image: linear-gradient(to right, #ffc107, #ffca2c);
+      border: 2px solid #fff;
+      border-radius: 12px;
       cursor: pointer;
       text-decoration: none;
-      transition: background-color 0.3s;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      transition: all 0.3s ease;
     }
     .button:hover {
-      background-color: #e0a800;
+      background-image: linear-gradient(to right, #ffca2c, #ffc107);
+      transform: scale(1.05);
     }
     @media (max-width: 768px) {
       body {
         background: url('background.jpg') no-repeat center center scroll;
         background-size: contain;
-        padding-bottom: 80px; /* Adjusted for mobile too */
+        padding-bottom: 150px; /* Adjusted for mobile too */
       }
       .logo {
         max-width: 90%;
