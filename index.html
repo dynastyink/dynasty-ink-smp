@@ -9,33 +9,28 @@
     html, body {
       margin: 0;
       padding: 0;
-      height: 100vh;
-      width: 100vw;
+      height: 100%;
+      width: 100%;
     }
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: url('background.jpg') no-repeat center center;
+      background: url('background.jpg') no-repeat center center fixed;
       background-size: cover;
-      background-attachment: fixed;
       color: #fff;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      min-height: 100vh;
     }
     .logo {
-      max-width: 50%;
+      max-width: 80%;
       height: auto;
     }
     @media (max-width: 768px) {
-      html, body {
-        height: 100vh;
-        width: 100vw;
-      }
       body {
-        background-attachment: scroll;
+        background: url('background.jpg') no-repeat center center scroll;
         background-size: cover;
-        background-position: center;
       }
       .logo {
         max-width: 90%;
@@ -46,4 +41,3 @@
 <body>
 </body>
 </html>
-
