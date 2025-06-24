@@ -17,53 +17,50 @@
       background-size: contain;
       background-color: #000;
       color: #fff;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      align-items: center;
-      min-height: 100vh;
       text-align: center;
-      padding-bottom: 200px; /* Moved buttons even higher */
-    }
-    .logo {
-      max-width: 80%;
-      height: auto;
+      position: relative;
     }
     .button-container {
+      position: fixed;
+      bottom: 80px;
+      left: 50%;
+      transform: translateX(-50%);
       display: flex;
-      gap: 20px;
+      gap: 24px;
+      z-index: 999;
       flex-wrap: wrap;
       justify-content: center;
     }
     .button {
-      margin: 10px;
-      padding: 16px 32px;
-      font-size: 1.1rem;
+      padding: 14px 28px;
+      font-size: 1.15rem;
       font-weight: bold;
-      color: #000;
-      background-image: linear-gradient(to right, #ffc107, #ffca2c);
+      color: #fff;
+      background: linear-gradient(135deg, #ffc107, #ff6f00);
       border: 2px solid #fff;
-      border-radius: 12px;
+      border-radius: 50px;
       cursor: pointer;
       text-decoration: none;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-      transition: all 0.3s ease;
+      box-shadow: 0 8px 15px rgba(0,0,0,0.25);
+      transition: all 0.35s ease;
     }
     .button:hover {
-      background-image: linear-gradient(to right, #ffca2c, #ffc107);
-      transform: scale(1.05);
+      background: linear-gradient(135deg, #ff6f00, #ffc107);
+      transform: scale(1.08);
     }
     @media (max-width: 768px) {
       body {
         background: url('background.jpg') no-repeat center center scroll;
         background-size: contain;
-        padding-bottom: 150px; /* Adjusted for mobile too */
-      }
-      .logo {
-        max-width: 90%;
       }
       .button-container {
         flex-direction: column;
+        bottom: 40px;
+        gap: 16px;
+      }
+      .button {
+        padding: 12px 24px;
+        font-size: 1rem;
       }
     }
   </style>
